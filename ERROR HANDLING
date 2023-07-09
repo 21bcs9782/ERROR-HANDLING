@@ -23,7 +23,7 @@ contract AssertionExample {
         return result;
     }
     
-    function requireStatement(uint a, uint b) public pure returns (uint) {
+    function requireStatement(uint a, uint b)external pure returns (uint) {
         // `require` is used to validate inputs or conditions, and if they
         // evaluate to false, the transaction is reverted.
         require(a != 0 && b != 0, "Inputs must be non-zero.");
